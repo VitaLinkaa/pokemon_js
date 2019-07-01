@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'Pokemon Hollow Normal';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Pokemon Hollow Normal'), url('fonts/pokemon/Pokemon Hollow.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pixelade';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Pixelade'), url('fonts/pixelated/PIXELADE.woff') format('woff');
+}
+
+body {
+	background-color: #fe2;
+
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+
+h1 {
+	font-family: 'Pokemon Hollow Normal';
+	text-transform: uppercase;
+	font-size: 40px;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+#getPokemon {
+	font-family: 'Pixelade';
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 10px;
+	box-shadow: -1px -1px 1px #000;
+	border: none;
+	background: red;
+	color: #fff;
+	cursor: pointer;
+}
+
+#getPokemon:hover {
+	background: #e50000;
+}
+
+#getPokemon:active {
+	background: #cc0000;
+}
+
+.container {
+	max-width: 900px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	min-height: 10%;
+	margin: 40px auto;
+}
+
+.pokemonCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Pokemon Hollow Normal';
+	padding: 10px;
+	margin: 10px;
+	
+}
+
+
+.pokemonCard > img {
+	width: 100px;
+}
